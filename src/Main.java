@@ -19,7 +19,6 @@ public class Main {
         ErrorSoftware buscado = analizador.buscarPorCodigo("ERR-04");
         System.out.println("Búsqueda ERR-04: " + (buscado != null ? buscado.mostrarInformacion() : "No encontrado"));
 
-        ErrorSoftware primerAlta = analizador.obtenerPrimerPendienteAlta();
         System.out.println("Primer pendiente ALTA (Desafío): " + (primerAlta != null ? primerAlta.mostrarInformacion() : "Ninguno"));
     }
 }
