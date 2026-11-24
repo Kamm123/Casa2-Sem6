@@ -55,17 +55,4 @@ public class AnalizadorErrores {
         }
         return contador;
     }
-
-    // DESAFÍO: Primer error pendiente de severidad ALTA
-    public ErrorSoftware obtenerPrimerPendienteAlta() {
-        if (errores == null) {
-            return null;
-        }
-        for (int i = 0; i < errores.length; i++) {
-            if (errores[i] != null && !errores[i].isResuelto() && errores[i].getSeveridad().equals("ALTA")) {
-                return errores[i];
-            }
-        }
-        return null;
-    }
 }
